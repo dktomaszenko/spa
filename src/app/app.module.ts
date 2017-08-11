@@ -6,6 +6,7 @@ import {NgModule} from '@angular/core';
 
 // RUTAS
 
+import {APP_ROUTING} from './app.routes';
 
 // SERVICIOS
 
@@ -18,6 +19,7 @@ import {HomeComponent} from './components/home/home.component';
 import {AboutComponent} from './components/about/about.component';
 import {HeroesComponent} from './components/heroes/heroes.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,8 @@ import {HeroesComponent} from './components/heroes/heroes.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
