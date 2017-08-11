@@ -4,13 +4,13 @@ import {HttpModule} from '@angular/http';
 import {NgModule} from '@angular/core';
 
 
-// RUTAS   sfgsfsdfsdfds
+// RUTAS
 
 
 // SERVICIOS
 
 
-// COMPONENTES fdgdfgdf
+// COMPONENTES
 
 import {AppComponent} from './app.component';
 import {NavbarComponent} from './components/shared/navbar/navbar.component';
