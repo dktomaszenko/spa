@@ -1,7 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
+import {NgModule} from '@angular/core';
 
 
 // RUTAS   sfgsfsdfsdfds
@@ -10,13 +10,13 @@ import { NgModule } from '@angular/core';
 // SERVICIOS
 
 
-// COMPONENTES  sfgsdfsdfsdfsdf
+// COMPONENTES
 
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/shared/navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import { HeroesComponent } from './components/heroes/heroes.component';
+import {AppComponent} from './app.component';
+import {NavbarComponent} from './components/shared/navbar/navbar.component';
+import {HomeComponent} from './components/home/home.component';
+import {AboutComponent} from './components/about/about.component';
+import {HeroesComponent} from './components/heroes/heroes.component';
 
 @NgModule({
   declarations: [
@@ -34,4 +34,5 @@ import { HeroesComponent } from './components/heroes/heroes.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
