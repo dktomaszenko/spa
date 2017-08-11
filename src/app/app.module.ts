@@ -1,5 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
+
+
+// RUTAS
+
+
+// SERVICIOS
+
+
+// COMPONENTES
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
@@ -16,7 +27,9 @@ import { HeroesComponent } from './components/heroes/heroes.component';
     HeroesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
