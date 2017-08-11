@@ -10,7 +10,7 @@ import { NgModule } from '@angular/core';
 // SERVICIOS
 
 
-// COMPONENTES
+// COMPONENTES  sfgsdfsdfsdfsdf
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
