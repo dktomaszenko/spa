@@ -10,6 +10,8 @@ import {APP_ROUTING} from './app.routes';
 
 // SERVICIOS
 
+import {HeroesService} from './services/heroes.service';
+
 
 // COMPONENTES
 
@@ -34,7 +36,9 @@ import {HeroesComponent} from './components/heroes/heroes.component';
     HttpModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    HeroesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
