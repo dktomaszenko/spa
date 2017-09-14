@@ -30,4 +30,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Último video
 
-047-routerlink-y-routerlinkactive-completando-las-rutas
+054-tarea-prctica-1-componente-del-hroe
