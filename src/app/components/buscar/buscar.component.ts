@@ -16,6 +16,12 @@ export class BuscarComponent implements OnInit {
               private _heroesService: HeroesService,
               private router: Router) {
 
+
+  }
+
+  ngOnInit() {
+    this.heroesData = this._heroesService.getHeroes();
+
     this.activateRoute.params.subscribe(params => {
       for (let heroe of this.heroesData) {
         if ((heroe.nombre).toLowerCase() === params['termino'].toLowerCase()) {
@@ -25,11 +31,6 @@ export class BuscarComponent implements OnInit {
       }
 
     });
-  }
-
-  ngOnInit() {
-
-    this.heroes = this._heroesService.getHeroes();
   }
 
   verHeroe(idx: number) {
