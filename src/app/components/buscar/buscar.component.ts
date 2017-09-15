@@ -9,8 +9,9 @@ import {Heroe, HeroesService} from '../../services/heroes.service';
 })
 export class BuscarComponent implements OnInit {
 
-  heroesData: Heroe[] = [];
   heroes: Heroe[] = [];
+  termino: string;
+  sinResultados: boolean = true;
 
   constructor(private activateRoute: ActivatedRoute,
               private _heroesService: HeroesService,
@@ -20,16 +21,11 @@ export class BuscarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.heroesData = this._heroesService.getHeroes();
 
     this.activateRoute.params.subscribe(params => {
-      for (let heroe of this.heroesData) {
-        if ((heroe.nombre).toLowerCase() === params['termino'].toLowerCase()) {
-          this.heroes.push(heroe);
-
-        }
-      }
-
+      this.heroes = this._heroesService.buscarHeroes(params['termino']);
+      this.sinResultados = !(this.heroes.length > 0);
+      this.termino = params['termino'];
     });
   }
 

@@ -1,8 +1,11 @@
-<h1>Héroes
-  <small>Marvel y DC</small>
+<h1>Buscando:
+  <small>{{termino}}</small>
 </h1>
 <hr>
-<div class="card-columns">
+<div *ngIf="sinResultados" class="alert alert-danger" role="alert">
+  <strong>Ups!</strong> No se han encontrado resultados.
+</div>
+<div *ngIf="!sinResultados" class="card-columns">
 
   <div class="card animated fadeIn fast" *ngFor="let heroe of heroes; let i = index">
     <img class="card-img-top img-fluid" [src]="heroe.img" [alt]="heroe.nombre">
