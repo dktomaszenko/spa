@@ -11,7 +11,7 @@ export class BuscarComponent implements OnInit {
 
   heroes: Heroe[] = [];
   termino: string;
-  sinResultados: boolean = true;
+  sinResultados = true;
 
   constructor(private activateRoute: ActivatedRoute,
               private _heroesService: HeroesService,
