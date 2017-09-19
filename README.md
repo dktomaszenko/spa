@@ -34,7 +34,19 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     npm install lodash --save
     npm install @types/lodash --save-dev
     
-Add the library to the angular-cli.json to list of global scripts (add "../node_modules/lodash/lodash.js"  
+Add the library to the angular-cli.json to list of global scripts (add "../node_modules/lodash/lodash.js"
+
+and in your component where you want to use , try this way
+
+    declare var _:any;
+
+    @Component({
+    })
+    export class YourComponent {
+      ngOnInit() {
+         console.log(_.chunk(['a', 'b', 'c', 'd'], 2));
+      }
+    }  
 
 ## Último video
 
