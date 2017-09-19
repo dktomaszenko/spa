@@ -26,4 +26,6 @@ export class HeroesComponent implements OnInit {
     this.router.navigate(['/heroe', idx]);
   }
 
+
+
 }

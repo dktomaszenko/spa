@@ -48,6 +48,45 @@ and in your component where you want to use , try this way
       }
     }  
 
-## Último video
+## De interes
 
-060-plus-mostrando-un-mensaje-cuando-no-hay-resultados.
+· temp as number
+
+      export class TempConverter {
+      static convertFtoC(temp: any): string {
+        let value: number;
+        if ((temp as number).toPrecision) {
+          value = temp;
+        } else if ((temp as string).indexOf) {
+          value = parseFloat(<string>temp);
+        } else {
+          value = 0;
+        }
+        return ((parseFloat(value.toPrecision(2)) - 32) / 1.8).toFixed(1);
+      }
+    }
+    
+--
+
+    import { Name as OtherName } from "./modules/DuplicateName";
+    
+--
+
+
+
+      @Injectable()
+      export class ProductRepository {
+      private products: Product[] = [];
+      private categories: string[] = [];
+      constructor(private dataSource: StaticDataSource) {
+        dataSource.getProducts().subscribe(data => {
+          this.products = data;
+          this.categories = data.map(p => p.category)
+            .filter((c, index, array) => array.indexOf(c) == index).sort();
+        });
+      }
+    }
+    
+ --
+ 
+ 
