@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {HeroesService, Heroe} from '../../services/heroes.service';
 import {Router} from '@angular/router';
 
-declare var _: any;
+declare let _: any;
 
 @Component({
   selector: 'app-heroes',
